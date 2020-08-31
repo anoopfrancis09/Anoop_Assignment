@@ -1,6 +1,6 @@
 //
 //  Color+Extensions.swift
-//  Instagram
+//  anoop_assignment
 //
 //  Created by Apple on 27/08/20.
 //  Copyright © 2020 Apple. All rights reserved.

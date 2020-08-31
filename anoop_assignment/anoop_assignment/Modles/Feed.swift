@@ -1,6 +1,6 @@
 //
 //  Feed.swift
-//  Instagram
+//  anoop_assignment
 //
 //  Created by Apple on 26/08/20.
 //  Copyright © 2020 Apple. All rights reserved.
