@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bfi-I9-An2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1346"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="330" id="81l-ar-iXj" customClass="FeedCell" customModule="Instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="330"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="81l-ar-iXj" id="0pB-wU-hbp">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="330"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PB4-6x-pca" userLabel="PersonStack">
+                                                    <rect key="frame" x="23" y="23" width="978" height="30"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="C0t-tN-CBU" customClass="InstaImageView" customModule="Instagram" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="1.5" width="30" height="27.5"/>
+                                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="aBl-xe-chI"/>
+                                                                <constraint firstAttribute="height" constant="30" id="oOM-2c-KzJ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="15"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raY-xJ-HY0">
+                                                            <rect key="frame" x="45" y="6" width="933" height="18"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p9K-kp-Lli" customClass="InstaImageView" customModule="Instagram" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="63" width="1024" height="206"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4XV-e4-UtK">
+                                                    <rect key="frame" x="23" y="277" width="978" height="30"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Wwh-Jf-X0E">
+                                                            <rect key="frame" x="0.0" y="1.5" width="30" height="27.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="PtL-Vw-Slk"/>
+                                                                <constraint firstAttribute="height" constant="30" id="di5-As-C5M"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cat-Tr-F1C">
+                                                            <rect key="frame" x="40" y="0.5" width="30" height="29.5"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="DyV-7m-plG"/>
+                                                                <constraint firstAttribute="height" constant="30" id="b33-Dx-bdZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcx-ta-N6R">
+                                                            <rect key="frame" x="80" y="0.0" width="898" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="RUu-cc-WTU"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4XV-e4-UtK" firstAttribute="leading" secondItem="0pB-wU-hbp" secondAttribute="leadingMargin" constant="8" id="4pl-4E-yhV"/>
+                                                <constraint firstItem="PB4-6x-pca" firstAttribute="leading" secondItem="0pB-wU-hbp" secondAttribute="leadingMargin" constant="8" id="5XM-Yb-u65"/>
+                                                <constraint firstItem="p9K-kp-Lli" firstAttribute="leading" secondItem="0pB-wU-hbp" secondAttribute="leading" id="6gY-jE-gD3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PB4-6x-pca" secondAttribute="trailing" constant="8" id="COm-fo-6Xk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4XV-e4-UtK" secondAttribute="trailing" constant="8" id="JdW-2e-0JI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="4XV-e4-UtK" secondAttribute="bottom" constant="8" id="T3r-Yv-8Ws"/>
+                                                <constraint firstItem="p9K-kp-Lli" firstAttribute="top" secondItem="PB4-6x-pca" secondAttribute="bottom" constant="10" id="rQP-tN-oLI"/>
+                                                <constraint firstItem="PB4-6x-pca" firstAttribute="top" secondItem="0pB-wU-hbp" secondAttribute="topMargin" constant="8" id="urL-ed-3mc"/>
+                                                <constraint firstItem="4XV-e4-UtK" firstAttribute="top" secondItem="p9K-kp-Lli" secondAttribute="bottom" constant="8" id="xBD-Ek-QBk"/>
+                                                <constraint firstAttribute="trailing" secondItem="p9K-kp-Lli" secondAttribute="trailing" id="xJr-PF-qjZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedImageView" destination="p9K-kp-Lli" id="g32-za-8lv"/>
+                                            <outlet property="profileImageView" destination="C0t-tN-CBU" id="3tn-2I-3Lt"/>
+                                            <outlet property="profileName" destination="raY-xJ-HY0" id="ya1-nt-FcI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hpM-oK-5FU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4NW-yd-icY"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="p4H-dA-0Qh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bfi-I9-An2" secondAttribute="bottom" id="1ez-Z0-IyH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bfi-I9-An2" secondAttribute="trailing" id="3Ax-OR-Pr1"/>
+                            <constraint firstItem="Bfi-I9-An2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3OL-rC-bXs"/>
+                            <constraint firstItem="Bfi-I9-An2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SwG-Te-eio"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="feedsTable" destination="Bfi-I9-An2" id="6zo-Mq-Cl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>
